@@ -1,0 +1,30 @@
+.row-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13px;
+    .card-person{
+        border: 1px solid #dddddd;
+        .card-body{
+            padding: 5px 15px;
+            p{
+                font-size: 23px;
+            }
+           
+            a.link{
+                text-align: center;
+                display: block;
+                margin: 30px 0;
+                border: 1px solid #777777;
+                padding: 10px;
+                text-decoration: none;
+                color: #777777;
+                &:hover{
+                    border: 1px solid rgb(60, 105, 202);
+                    background-color: rgb(60, 105, 202);
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

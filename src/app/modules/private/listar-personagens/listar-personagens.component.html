@@ -1,0 +1,15 @@
+<div class="row-cards">
+    <div class="card-person" *ngFor="let c of (characters$ | async)?.results">
+        <img [src]="c.image" alt="image">
+        <div class="card-body">
+            <p>{{c.name}}</p>
+            <ul>
+                <li>Status: {{c.status}}</li>
+                <li>Species: {{c.species}}</li>
+                <li>Gender: {{c.gender}}</li>
+            </ul>
+
+            <a class="link" routerLink="/private/personagens/{{c.id}}">Ver detalhes</a>
+        </div>
+    </div>
+</div>

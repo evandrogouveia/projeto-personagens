@@ -1,0 +1,18 @@
+<div class="card-person">
+    <div class="card-left">
+        <img [src]="(charactersDetail$ | async)?.image" alt="image">
+    </div>
+    <div class="card-right">
+        <p>{{(charactersDetail$ | async)?.name}}</p>
+        <ul>
+            <li><strong>Created:</strong> {{(charactersDetail$ | async)?.created | date: 'dd/MM/yyyy'}}</li>
+            <li><strong>Status:</strong> {{(charactersDetail$ | async)?.status}}</li>
+            <li><strong>Species:</strong> {{(charactersDetail$ | async)?.species}}</li>
+            <li><strong>Gender:</strong> {{(charactersDetail$ | async)?.gender}}</li>
+            <li><strong>url:</strong> {{(charactersDetail$ | async)?.url}}</li>
+            <li><strong>Location:</strong> {{(charactersDetail$ | async)?.location.name}}</li>
+        </ul>
+    </div>
+</div>
+
+<a class="link" routerLink="/private/personagens">Voltar</a>

@@ -1,0 +1,13 @@
+<div class="content-login">
+    <form [formGroup]="formLogin" (ngSubmit)="login()">
+        <div class="wrap-group">
+            <label>E-mail</label>
+            <input type="email" name="email" formControlName="email">
+        </div>
+        <div class="wrap-group">
+            <label>Password</label>
+            <input type="password" name="password" formControlName="password">
+        </div>
+        <button type="submit">Login</button>
+    </form>    
+</div>
